@@ -310,9 +310,8 @@ static int exynos5_get_drmMode(int flags)
         else
 #endif
             return SECURE_DRM;
-    } else {
-        return NO_DRM;
     }
+    return NO_DRM;
 }
 
 static int exynos5_hal_2_v4l2_format(int format)
