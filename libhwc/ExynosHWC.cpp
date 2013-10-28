@@ -267,6 +267,8 @@ static uint32_t exynos5_format_to_gsc_format(int format)
         return HAL_PIXEL_FORMAT_BGRA_8888;
     case HAL_PIXEL_FORMAT_BGRA_8888:
         return HAL_PIXEL_FORMAT_RGBA_8888;
+    case HAL_PIXEL_FORMAT_YCbCr_420_SP:
+        return HAL_PIXEL_FORMAT_CUSTOM_YCrCb_420_SP;
     default:
         return format;
     }
