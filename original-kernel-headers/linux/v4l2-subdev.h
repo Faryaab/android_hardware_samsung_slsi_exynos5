@@ -25,7 +25,7 @@
 
 #include <linux/ioctl.h>
 #include <linux/types.h>
-#include "v4l2-mediabus.h"
+#include <linux/v4l2-mediabus.h>
 
 /**
  * enum v4l2_subdev_format_whence - Media bus format type

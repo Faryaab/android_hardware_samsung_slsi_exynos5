@@ -14,8 +14,12 @@ LOCAL_SRC_FILES := \
 	csc_ARGB8888_to_ABGR8888.s
 
 LOCAL_C_INCLUDES := \
+	$(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include \
 	$(TOP)/hardware/samsung_slsi/openmax/include/khronos \
 	$(LOCAL_PATH)/../include
+
+LOCAL_ADDITIONAL_DEPENDENCIES += \
+	$(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
 
 LOCAL_MODULE := libswconverter
 
